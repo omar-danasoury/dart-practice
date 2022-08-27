@@ -5,6 +5,14 @@ class Point {
   final x;
   final y;
   
+  
+  // hashCode:
+  // hashCode should be overrode for every class
+  // as two classes are equal if they have the same
+  // hashCode, we can do this using equatable libarary
+  @override
+  List<Object> get props => [x, y];
+
   // toString:
   // implementing the toString function for a custom object
   // String toString() => 'Point($x, $y)';
