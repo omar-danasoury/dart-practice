@@ -4,4 +4,7 @@ class Point {
         y = y;
   final x;
   final y;
+  
+  // implementing the toString function for a custom object
+  String toString() => 'Point($x, $y)';
 }
