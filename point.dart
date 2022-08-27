@@ -13,4 +13,9 @@ class Point {
   bool operator ==(covariant Point other) {
     return (other.x == x) & (other.y == y);
   }
+  
+  //[Exercise] implementing the + operator
+  Point operator +(covariant Point other) =>
+      Point((x + other.x), (y + other.y));
+
 }
