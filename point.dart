@@ -5,8 +5,12 @@ class Point {
   final x;
   final y;
   
+  // toString:
   // implementing the toString function for a custom object
-  String toString() => 'Point($x, $y)';
+  // String toString() => 'Point($x, $y)';
+  // implementing the toString() method using equatable library
+  @override
+  bool get stringify => true;
   
   // implementing the == operator for the Point class;
   // 'covariant' keyword is used to make sure that the passed object is indeed a 'Point' object
