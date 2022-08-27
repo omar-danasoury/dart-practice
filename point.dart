@@ -10,9 +10,7 @@ class Point {
   
   // implementing the == operator for the Point class;
   // 'covariant' keyword is used to make sure that the passed object is indeed a 'Point' object
-  bool operator ==(covariant Point other) {
-    return (other.x == x) & (other.y == y);
-  }
+  bool operator ==(covariant Point other) => (other.x == x) & (other.y == y);
   
   //[Exercise] implementing the + operator
   Point operator +(covariant Point other) =>
