@@ -18,5 +18,16 @@ class Point {
   
   //[Exercise] implementing the * operator
   Point operator *(int num) => Point(x * num, y * num);
+}
 
+void main(List<String> args) {
+  const origin = Point(0, 0);
+  const point1 = Point(1, 0);
+  const point2 = Point(1, 2);
+  const point3 = Point(2, 1);
+  print(origin == point1);
+  print(origin == point2);
+  print('The origin point in the coordinate is ${origin.toString()}');
+  print('${point2.toString()} + ${point1.toString()} = ${point2 + point1}');
+  print('${point3 * 5}');
 }
