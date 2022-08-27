@@ -15,5 +15,8 @@ class Point {
   //[Exercise] implementing the + operator
   Point operator +(covariant Point other) =>
       Point((x + other.x), (y + other.y));
+  
+  //[Exercise] implementing the * operator
+  Point operator *(int num) => Point(x * num, y * num);
 
 }
