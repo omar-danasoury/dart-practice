@@ -16,3 +16,10 @@ class Credentials {
   @override
   String toString() => 'Crednetials($email, $password)';
 }
+
+void main(List<String> args) {
+  const cred = Credentials();
+  final cred2 = cred.copyWith(email: 'myemail@email.com');
+  final cred3 = cred2.copyWith(password: '1234');
+  print(cred3);
+}
