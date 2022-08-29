@@ -12,4 +12,7 @@ class Credentials {
       password: password ?? this.password,
     );
   }
+  
+  @override
+  String toString() => 'Crednetials($email, $password)';
 }
